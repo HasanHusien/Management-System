@@ -1,0 +1,154 @@
+* {
+    margin: 1px 3px;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+body {
+    background: #222;
+    color: #fff;
+    font-family: system-ui;
+
+}
+
+.crud {
+    width: 79%;
+    margin: auto;
+}
+
+.head {
+    text-align: center;
+    /* text-transform: uppercase; */
+    margin: 10px 0px;
+}
+
+input {
+    width: 100%;
+    height: 25px;
+    margin: 5px 0px;
+    outline: none;
+    border: none;
+    background: #111;
+    border-radius: 4px;
+    padding: 5px;
+    color: #fff;
+}
+
+input:focus {
+    background: #000;
+    /* transform: scale(1.1); */
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 100%;
+    min-width: 120px;
+    flex: 1;
+    text-align: center;
+}
+
+.price input {
+    width: 18%;
+}
+
+.small {
+    width: 19%;
+
+}
+
+#total {
+    background: crimson;
+    padding: 7px 5px;
+    border-radius: 2px;
+    transition: .5s;
+    /* width: 90px;
+    height: 30px; */
+    text-align: center;
+    display: flex;
+
+}
+
+#total::before {
+    content: 'total:';
+
+}
+
+#total:hover {
+    background: #f35172;
+}
+
+
+button {
+    width: 100%;
+    height: 30px;
+    margin: 5px 0px;
+    border: none;
+    cursor: pointer;
+    background: crimson;
+    border-radius: 20px;
+    color: #fff;
+    transition: .5s;
+
+
+}
+
+button:hover {
+    background: #f35172;
+    letter-spacing: 1px;
+}
+
+.btnsearch {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnsearch button:hover {
+
+    letter-spacing: .5px;
+}
+
+.btnsearch button {
+    width: 47%;
+    transition: .5s;
+}
+
+#deleteall {
+    margin: 5px 0px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px;
+    text-transform: capitalize;
+
+}
+
+table th {
+    margin: 0px 10px;
+    text-transform: uppercase;
+}
+
+th,
+td {
+    padding: 2px;
+    margin: 3px 10px;
+    border: none;
+}
+
+table tr:nth-child(even) {
+    background-color: #404040;
+}
+
+table tr:nth-child(odd) {
+    background-color: #222;
+}
+
+content {
+    display: flex;
+    flex-wrap: wrap;
+}
+

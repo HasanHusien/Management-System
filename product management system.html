@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product management system</title>
+    <link rel="stylesheet" href="product management system.css">
+</head>
+
+<body>
+    <div class="theproject">
+        <div class="head">
+            <h2>wealcome in </h2>
+            <p>
+                product management system
+            </p>
+        </div>
+        <div class="inputs">
+            <form action="">
+                <input type="text" required placeholder="title" id="title">
+                <div class="price">
+                    <input onkeyup="gettotale()" type="number" pattern="[1-9]+" required placeholder="price" id="price">
+                    <input onkeyup="gettotale()" type="number" pattern="[1-9]+" placeholder="taxes" id="taxes">
+                    <input onkeyup="gettotale()" type="number" pattern="[1-9]+" placeholder="discount" id="discount">
+                    <input onkeyup="gettotale()" type="text" placeholder="date now" id="ads">
+                    <small id="total"></small>
+                </div>
+                <input type="text" required placeholder="category" id="category">
+                <input type="number" placeholder="count" id="count">
+                <button type="submit" id="submit">create</button>
+            </form>
+        </div>
+        <div class="outputs">
+            <div class="searchblock">
+                <input onkeyup="searchdata(this.value)" type="text" id="search" placeholder="search by ...">
+                <div class="btnsearch">
+                    <button onclick="getsearchneme(this.id)" id="searchtitle">search by title</button>
+                    <button onclick="getsearchneme(this.id)" id="category">search by category</button>
+                </div>
+            </div>
+            <div id="deleteall">
+            </div>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>discount</th>
+                    <th>category</th>
+                    <th>date</th>
+                    <th>totale</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="product management system.js"></script>
+</body>
+
+</html>
